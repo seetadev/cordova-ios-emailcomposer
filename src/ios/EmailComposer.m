@@ -161,8 +161,10 @@
         NSLog(@"Error parsing JSON: %@",[jsonParsingError description]);
         // log to the error callback/handler of the JS client, if a callback was specified
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_JSON_EXCEPTION];
-        javaScript = [pluginResult toErrorCallbackString:[self callbackId]];
-        [self writeJavascript:javaScript];
+        // javaScript = [pluginResult toErrorCallbackString:[self callbackId]];
+        // [self writeJavascript:javaScript];
+        // Cordova - 4+
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:self.callbackId]; 
     }
     
     return jsonArray;
