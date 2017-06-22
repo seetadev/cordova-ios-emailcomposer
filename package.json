@@ -1,0 +1,38 @@
+{
+  "name": "cordova-plugin-emailcomposer",
+  "version": "0.1.1",
+  "description": "This plugin allows you to create e-mail messages via Apple's Mail.app compose view.",
+  "cordova": {
+    "id": "emailcomposer",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seetadev/cordova-ios-emailcomposer"
+  },
+  "keywords": [
+    "Cordova",
+    "PhoneGap",
+    "plugin",
+    "network",
+    "activity",
+    "indicator",
+    "iOS",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "seetadev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seetadev/cordova-ios-emailcomposer/issues"
+  },
+  "homepage": "https://github.com/seetadev/cordova-ios-emailcomposer"
+}
